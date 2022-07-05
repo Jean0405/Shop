@@ -10,6 +10,8 @@
   --very-light-pink: #c7c7c7;
   --text-input-field: #f7f7f7;
   --hospital-green: #acd9b2;
+  --font-size-P: 1.5rem;
+  --font-size-H1: 2.3rem;
 }
 html {
   font-size: 62.5%;
@@ -18,7 +20,7 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-.login {
+.main-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -37,12 +39,13 @@ body {
   text-align: center;
 }
 .title-section h1 {
-  font-size: 2.3rem;
+  font-size: var(--font-size-H1);
   margin: 1rem 0;
 }
 .title-section p {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: var(--font-size-P);
+  padding: 2rem;
 }
 
 form {
@@ -107,9 +110,10 @@ form .input-pwd:focus {
 
 .submit-button {
   width: 95%;
+  max-width: 30rem;
   height: 4rem;
   align-self: center;
-  margin: 6rem 0;
+  margin: 3rem 0;
   border-radius: 8px;
   border: none;
   letter-spacing: 0.9px;
@@ -136,4 +140,33 @@ footer .rights-reserved {
   text-align: center;
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+/*--------------- PASSWORD RECOVERY -----------------*/
+.main-container .email-icon {
+  position: relative;
+}
+.recovery {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 15rem;
+}
+.recovery::before {
+  position: absolute;
+  content: "";
+  left: calc(50% - 7.5rem);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.main-container .receive-email {
+  font-size: var(--font-size-P);
+  padding: 1rem;
+}
+.main-container .resend-span {
+  font-style: italic;
+  color: var(--hospital-green);
 }
