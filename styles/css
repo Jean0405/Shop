@@ -19,7 +19,7 @@ html {
 body {
   font-family: "Quicksand", sans-serif;
 }
-
+/*NEW PASSWORD SCREEN*/
 .main-container {
   position: relative;
   display: flex;
@@ -168,5 +168,31 @@ footer .rights-reserved {
 }
 .main-container .resend-span {
   font-style: italic;
+  color: var(--hospital-green);
+}
+/*LOGIN SCREEN*/
+.signUp-container {
+  display: grid;
+  place-items: center;
+}
+.signUp-container .link_new-pwd {
+  font-size: var(--font-size-P);
+  color: var(--black);
+  font-style: italic;
+  text-decoration: none;
+}
+.button-SignUp {
+  position: absolute;
+  bottom: 6rem;
+  left: calc(50% - 13rem);
+  width: 25rem;
+  max-width: 25rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid var(--black);
+  color: var(--black);
+}
+.button-SignUp:hover {
+  background-color: var(--black);
   color: var(--hospital-green);
 }
