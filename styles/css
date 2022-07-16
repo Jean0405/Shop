@@ -12,6 +12,7 @@
   --hospital-green: #acd9b2;
   --font-size-P: 1.5rem;
   --font-size-H1: 2.3rem;
+  --family-fonts: "Quicksand", sans-serif;
 }
 html {
   font-size: 62.5%;
@@ -271,4 +272,44 @@ footer .rights-reserved {
   height: 25rem;
   border-radius: 50%;
   background-color: var(--hospital-green);
+}
+/*INICIO SCREEN*/
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 35rem));
+  grid-auto-rows: 15rem;
+  justify-content: center;
+  align-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+.products-container .products-items {
+  display: grid;
+  place-content: center;
+  background-color: var(--very-light-pink);
+}
+.products-image {
+  width: 80%;
+  height: 7rem;
+}
+.products-items p {
+  text-align: center;
+  font-size: var(--font-size-P);
+  font-weight: 700;
+}
+.products-items .buy {
+  width: 8rem;
+  height: 2.5rem;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: var(--hospital-green);
+  transition: 0.6s;
+  cursor: pointer;
+}
+.products-items .buy:hover {
+  background-color: var(--black);
+  color: var(--hospital-green);
 }
